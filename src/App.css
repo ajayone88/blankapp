@@ -1,0 +1,62 @@
+.AppContainer{
+    background-color: whitesmoke;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.MessageBox{
+    padding:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.HeadingPriamryMain{
+    font-size:4rem;
+    margin:10px;
+    animation: moveInLeft 1.2s ease-out;
+    color:teal;
+}
+
+.HeadingPriamryMain:hover{
+    color:royalblue;
+}
+
+.HeadingPriamrySub{
+    text-align: center;
+    font-size:2rem;
+    margin:10px;
+    animation: moveInRight 1.2s ease-out;
+    color:lightslategray;
+}
+
+@media (max-width:40em){
+    .HeadingPriamryMain{
+        font-size: 3rem;
+    }
+}
+
+@keyframes moveInLeft{
+    0%{
+        transform: translate(-10rem);
+    }
+    80%{
+        transform: translate(2rem);
+    }
+    100%{
+        transform: translate(0);
+    }   
+}
+
+@keyframes moveInRight{
+    0%{
+        transform: translate(10rem);
+    }
+    80%{
+        transform: translate(-2rem);
+    }
+    100%{
+        transform: translate(0);
+    }   
+}
